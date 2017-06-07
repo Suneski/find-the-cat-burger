@@ -1,0 +1,63 @@
+body {
+	background-color: black;
+}
+
+#difficulty h1 {
+	font-size: 50px;
+}
+
+#audio-on, #audio-off {
+	width: 25px;
+	position: absolute;
+	top: 5px;
+	display: none;
+}
+
+#audio-on {
+	left: 8px;
+}
+
+#audio-off {
+	left: 5px;
+	display: none;
+}
+
+#audio-on:hover, #audio-off:hover {
+	opacity: .5;
+}
+
+#difficulty {
+	text-align: center;
+}
+
+#difficulty, #intro, #mission-accepted, #mission-rejected {
+  color: white;
+  width: 50%;
+  margin: 50px auto;
+  font-size: 25px;
+  line-height: 1.5;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+#intro div {
+  margin-top: 20px;
+}
+
+#yes, #no, #proceed {
+	text-align: center;
+}
+
+#yes:hover, #no:hover, #proceed:hover {
+  color: grey;
+}
+
+#intro, #mission-accepted, #mission-rejected {
+	display:none;
+}
+
+#mission-rejected {
+	text-align: center;
+}

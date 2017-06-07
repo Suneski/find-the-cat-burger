@@ -1,0 +1,111 @@
+// GRID
+
+.grid, #ghost-party, #pumpkin-man, #burger-rain {
+  height: 800px;
+  width: 800px;
+  background-image: url('images/haunted-woods.jpg');
+  background-size: contain;
+  position: relative;
+	display: none;
+	margin: 30px auto;
+}
+
+.grid div {
+  float: left;
+  // outline: 1px solid orange;
+}
+
+#attempts {
+	position: absolute;
+	bottom: 2px;
+	right: 4px;
+	color: rgba(193, 193, 193, 0.8);
+}
+
+#ghost, #burger {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+#ghost-game-over, #burger-cat-victory {
+  position: absolute;
+  text-align: center;
+
+  color: white;
+  width: 100%;
+  text-shadow: 1px 1px black;
+  display: none;
+}
+
+#ghost-game-over {
+  top: 310px;
+}
+
+#burger-cat-victory {
+  top: 360px
+}
+
+
+// GRID TEXT
+
+#ghost-game-over, #ghost-party, #pumpkin-man {
+	font-family: 'Creepster', cursive;
+	font-size: 80px;
+}
+
+#burger-cat-victory, #burger-rain {
+	font-family: 'Trade Winds', cursive;
+  font-size: 40px;
+}
+
+#ghost-party {
+	text-align: center;
+	font-size: 100px;
+  color: white;
+  text-shadow: 1px 1px 3px black;
+}
+
+#burger-rain {
+	text-align: center;
+	color: white;
+  text-shadow: 1px 1px black;
+}
+
+#burger-rain h1 {
+	padding-top: 380px;
+}
+
+#pumpkin-man h1 {
+	position: absolute;
+	bottom: 10px;
+	text-align: center;
+	font-size: 80px;
+  color: white;
+  text-shadow: 1px 1px 3px black;
+}
+
+
+
+// GIFS
+
+#ghost-party, #pumpkin-man, #burger-rain {
+	background-size: cover;
+	height: 800px;
+	width: 800px;
+	display: none;
+}
+
+#ghost-party {
+	background-image: url("images/ghost-party.gif");
+}
+
+#burger-rain {
+	background-image: url("images/burger-rain.gif");
+	background-position: center;
+}
+
+#pumpkin-man {
+	background-image: url("images/pumpkin.gif");
+	position: relative;
+}

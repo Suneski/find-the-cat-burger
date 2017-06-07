@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Find the Cat Burger</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <img src="images/audio-active.png" id="audio-on" />
+    <img src="images/audio-mute.png" id="audio-off" />
+
+
+    <div id="difficulty">
+      <h1>Find the Burger Cat</h1>
+      <h2>Select Difficulty</h2>
+      <select id="selectDifficulty">
+        <option value="easy">Easy</option>
+        <option value="medium">Medium</option>
+        <option value="hard">Hard</option>
+        <option value="good-luck">Good luck, kid.</option>
+      </select>
+      <button id="confirm">CONFIRM</button>
+    </div>
+
+
+    <div id="intro">
+      <p>The year is 2072. The enemy has removed all burgers from the planet. At least, supposedly.</p>
+      <p>Rumor has it that a legendary Cat Burger lives out in the Haunted Woods. You know, the woods that are haunted? Anyways, he can supposedly grant unlimited burgers to anyone courageous enough to seek him out.</p>
+      <p>Will you brave the Haunted Woods and find the legendary Cat Burger?</p>
+      <div id="initial-decision">
+        <div id="yes">YES</div>
+        <div id="no">NO</div>
+      </div>
+    </div>
+
+    <div id="mission-accepted">
+      <p>Awesome, let's get to work.</p>
+      <p>The Haunted Woods are full of ghosts, and people have a penchant for getting lost forever.</p>
+      <p>As you enter the woods, call out for the Cat Burger. Click in the woods to call out for him. But be careful! If you call too many times, evil spirits may find you and trap you in the Haunted Woods forever. Your remaining attempts are listed in the lower right hand corner.</p>
+      <p>Just a warning, ghosts haunt every corner of the woods. The legendary Cat Burger is hopefully out there, but ghosts definitely are. They are known for feasting on the blood and flesh of their victims.</p>
+      <p>Be careful out there.</p>
+      <p id="proceed">PROCEED</p>
+    </div>
+
+    <div id="mission-rejected">
+      <p>Fine. Whatever. Thanks, but no thanks.</p>
+      <img src="images/lamesauce.jpg" />
+      <p>(Refresh browser to start over. Try not to be so horrible next time.)</p>
+    </div>
+
+    <div class="grid">
+      <img src="images/burger.png" id="burger">
+      <img src="images/ghost.gif" id="ghost">
+
+      <div id="burger-cat-victory">
+        <h1>YOU FOUND THE BURGER CAT</h1>
+        <h1>VICTORY!!!</h1>
+      </div>
+      <div id="ghost-game-over">
+        <h1>A GHOST CAUGHT YOU</h1>
+        <h1>GAME OVER</h1>
+      </div>
+      <h1 id="attempts"></h1>
+    </div>
+
+    <div id="pumpkin-man">
+      <h1>WELL, NOW YOU'RE TRAPPED IN THE FOREST FOREVER WITH THIS GUY</h1>
+    </div>
+
+    <div id="ghost-party">
+      <h1>GHOST PARTY</h1>
+    </div>
+
+    <div id="burger-rain">
+      <h1>MAY THE BURGERS BE ENDLESS</h1>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
